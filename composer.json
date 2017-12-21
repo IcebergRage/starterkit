@@ -22,7 +22,9 @@
         "symfony/psr-http-message-bridge": "^1.0",
         "zendframework/zend-diactoros": "^1.5",
         "sentry/sentry": "^1.7",
-        "wizaplace/front-bundle": "~0.2.5"
+        "wizaplace/front-bundle": "dev-sitemap-simple",
+        "dpn/xml-sitemap-bundle": "^2.1",
+        "wizaplace/sdk": "@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "^3.0",

@@ -15,6 +15,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new WizaplaceFrontBundle\WizaplaceFrontBundle(),
+            new Dpn\XmlSitemapBundle\DpnXmlSitemapBundle(),
             new AppBundle\AppBundle(),
         ];
 

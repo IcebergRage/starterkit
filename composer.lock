@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0996d5078a5229553b3de2ab6da3cd5e",
+    "content-hash": "f19d0c8fce8e533516e7109d00259865",
     "packages": [
         {
             "name": "bmancone/guzzle-stopwatch-middleware",
@@ -605,6 +605,68 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "dpn/xml-sitemap-bundle",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bjo3rnf/DpnXmlSitemapBundle.git",
+                "reference": "881d46dea7f67b1aae348327769b8e038a485113"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bjo3rnf/DpnXmlSitemapBundle/zipball/881d46dea7f67b1aae348327769b8e038a485113",
+                "reference": "881d46dea7f67b1aae348327769b8e038a485113",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/asset": "^2.7|^3.0",
+                "symfony/dependency-injection": "^2.7|^3.0",
+                "symfony/framework-bundle": "^2.7|^3.0",
+                "symfony/templating": "^2.7|^3.0",
+                "symfony/twig-bundle": "^2.7|^3.0"
+            },
+            "require-dev": {
+                "matthiasnoback/symfony-dependency-injection-test": "^0.7.4",
+                "mockery/mockery": "^0.9",
+                "symfony/browser-kit": "^2.7|^3.0",
+                "symfony/console": "^2.7|^3.0",
+                "symfony/finder": "^2.7|^3.0",
+                "symfony/yaml": "^2.7|^3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dpn\\XmlSitemapBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Björn Fromme",
+                    "email": "fromme@dreipunktnull.com",
+                    "homepage": "http://www.dreipunktnull.com"
+                },
+                {
+                    "name": "Kevin Bond",
+                    "email": "kevinbond@gmail.com",
+                    "homepage": "http://zenstruck.com"
+                }
+            ],
+            "description": "Generates XML sitemaps for your favourite search engine by extracting sitemap information out of the site's routes.",
+            "keywords": [
+                "Sitemap"
+            ],
+            "time": "2017-02-06T15:05:55+00:00"
         },
         {
             "name": "fig/link-util",
@@ -2676,28 +2738,29 @@
         },
         {
             "name": "wizaplace/front-bundle",
-            "version": "v0.2.5",
+            "version": "dev-sitemap-simple",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wizaplace/wizaplace-front-bundle.git",
-                "reference": "e5d62daa25ccd313eecdb40d4231369c87377579"
+                "reference": "7955884c2b2eb985b74752f1b167b5c44903c929"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wizaplace/wizaplace-front-bundle/zipball/e5d62daa25ccd313eecdb40d4231369c87377579",
-                "reference": "e5d62daa25ccd313eecdb40d4231369c87377579",
+                "url": "https://api.github.com/repos/wizaplace/wizaplace-front-bundle/zipball/7955884c2b2eb985b74752f1b167b5c44903c929",
+                "reference": "7955884c2b2eb985b74752f1b167b5c44903c929",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1",
                 "roave/security-advisories": "@dev",
                 "symfony/monolog-bundle": "^3.1",
-                "symfony/symfony": "^3.3",
+                "symfony/symfony": "~3.3.14",
                 "twig/twig": "^2.4",
-                "wizaplace/sdk": "^1.2.0"
+                "wizaplace/sdk": "dev-slugs-catalog"
             },
             "require-dev": {
                 "bmancone/guzzle-stopwatch-middleware": "^1.0",
+                "dpn/xml-sitemap-bundle": "^2.1",
                 "lookyman/phpstan-symfony": "@dev",
                 "php-vcr/php-vcr": "^1.4",
                 "phpstan/phpstan": "^0.8.5",
@@ -2706,6 +2769,9 @@
                 "squizlabs/php_codesniffer": "^3.1",
                 "symfony/phpunit-bridge": "^3.3",
                 "wizaplace/php-coding-standard": "^1.1"
+            },
+            "suggest": {
+                "dpn/xml-sitemap-bundle": "To generate sitemaps"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -2717,20 +2783,20 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2017-12-01T08:29:34+00:00"
+            "time": "2017-12-21 15:12:07"
         },
         {
             "name": "wizaplace/sdk",
-            "version": "v1.2.0",
+            "version": "dev-slugs-catalog",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wizaplace/wizaplace-php-sdk.git",
-                "reference": "2edea829244b829c0e0229b27da13e9b105d0c9c"
+                "reference": "a2fc18da02df131c84b5a3027901ce45698a090a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wizaplace/wizaplace-php-sdk/zipball/2edea829244b829c0e0229b27da13e9b105d0c9c",
-                "reference": "2edea829244b829c0e0229b27da13e9b105d0c9c",
+                "url": "https://api.github.com/repos/wizaplace/wizaplace-php-sdk/zipball/a2fc18da02df131c84b5a3027901ce45698a090a",
+                "reference": "a2fc18da02df131c84b5a3027901ce45698a090a",
                 "shasum": ""
             },
             "require": {
@@ -2742,6 +2808,7 @@
                 "theodorejb/polycast": "^1.0"
             },
             "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.4",
                 "php-vcr/php-vcr": "^1.4.1",
                 "phpstan/phpstan": "^0.8.0",
                 "phpunit/phpunit": "^6.1",
@@ -2750,6 +2817,12 @@
                 "wizaplace/php-coding-standard": "^1.1.3"
             },
             "type": "library",
+            "extra": {
+                "hooks": {
+                    "post-checkout": "composer install || true",
+                    "post-merge": "composer install || true"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Wizaplace\\SDK\\": "src/"
@@ -2760,7 +2833,7 @@
                 "proprietary"
             ],
             "description": "Wizaplace's PHP SDK",
-            "time": "2017-11-30T08:46:25+00:00"
+            "time": "2017-12-21 15:10:25"
         },
         {
             "name": "zendframework/zend-diactoros",
@@ -5326,6 +5399,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "roave/security-advisories": 20,
+        "wizaplace/front-bundle": 20,
+        "wizaplace/sdk": 20,
         "lookyman/phpstan-symfony": 20
     },
     "prefer-stable": false,

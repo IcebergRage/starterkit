@@ -1,6 +1,9 @@
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
 
+DpnXmlSitemapBundle:
+    resource: "@DpnXmlSitemapBundle/Resources/config/routing.xml"
+
 wizaplace_front_bundle:
     resource: '@WizaplaceFrontBundle/Resources/config/routing.yml'
 
@@ -8,12 +11,16 @@ home:
     path: /
     defaults: { _controller: AppBundle:Home:home }
     methods: [GET]
+    options:
+        sitemap: true
 
 # Search
 search:
     path: /recherche
     defaults: { _controller: AppBundle:Search:search }
     methods: [GET]
+    options:
+        sitemap: true
 
 attribute_variant:
     path: /a/{slug}
@@ -29,6 +36,8 @@ login_form:
     path: /login
     defaults: { _controller: AppBundle:Auth:login }
     methods: [GET]
+    options:
+        sitemap: true
 
 logout: # see security.yml
     path: /logout
@@ -53,11 +62,15 @@ register_user:
     path: /inscription-utilisateur
     defaults: { _controller: AppBundle:Auth:registerUser }
     methods: [POST]
+    options:
+        sitemap: true
 
 register_vendor:
     path: /inscription-vendeur
     defaults: { _controller: AppBundle:Auth:registerCompany}
     methods: [GET, POST]
+    options:
+        sitemap: true
 
 # Profile
 profile:
