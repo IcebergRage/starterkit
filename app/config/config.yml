@@ -60,4 +60,4 @@ services:
         public: true
 
 dpn_xml_sitemap:
-    http_cache: 600
+    http_cache: 3600 # 3600 seconds = 1 hour
